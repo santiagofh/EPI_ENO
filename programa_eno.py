@@ -118,8 +118,6 @@ def page3():
         }
 
         comparison_df = pd.DataFrame(comparison_data)
-        comparison_df['%'] = (comparison_df['Sospechas*'][1] / comparison_df['Sospechas*'][0]) * 100 if comparison_df['Sospechas*'][0] != 0 else 0
-        comparison_df['Avance %'] = 100 - comparison_df['%']
 
         return comparison_df
 
